@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  body{
+    width: 100% ;
+    height: 100%;
+  }
+  .main{
+    width: 100% auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .main-container{
+    width: 100%;
+    height: 100% auto;
+    color: #454B68;
+  }
+  .header{
+    background-color: #FFFFFF;
+    padding-top:25px;
+    padding-bottom:20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  .header hr{
+    height: 4px;
+    width: 74px;
+    margin-top:10px;
+    background-color: #B72424;
+    border: none;
+    border-radius: 10px;
+  }
+  #headernavigation{
+    width: 100px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  
+  .content {
+    max-width: 100%;
+    overflow-y: auto; /* Включаем вертикальную прокрутку */
+    -webkit-overflow-scrolling: touch; /* Добавляем плавную прокрутку на мобильных устройствах */
+    height: 100%; /* Определяем высоту контента, которая учитывает высоту header и footer */
+    margin-top:34px;    
+    margin-top: 120px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .content-container{
+    width: 100% auto;
+    height: 100%;
+  }
+  
+  .content-blocks{
+    width: 100%;
+    height: 248px;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border-radius: 10px;
+  }
+  
+  .content-blocks-main-info{
+    width: 100%;
+    height: 241px;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    margin-bottom:25px;
+    border-radius: 10px;
+  }
+  .content-img{
+    background-image: url(/IMG/Eminem_Revival\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 117px;
+    border-top-left-radius: 8px;    
+    border-top-right-radius: 10px;
+  
+  }
+  
+  .content-img2{
+    background-image: url(/IMG/image\ 254.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 117px;
+    border-top-left-radius: 8px;    
+    border-top-right-radius: 10px;
+  
+  }
+  
+  .content-bottom-side{
+    width: 100% auto;
+    height: 124px;
+    background-color: rgb(248,248,248);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding-top:10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left:13px;
+    padding-right: 10px;    
+  }
+  .content-bottom-size-title{
+    font-size:22px;
+    font-weight: bold;
+    color:#41B724;
+  }
+  .content-bottom-size-text{
+    font-size:13px;
+    color:#454B68;
+  }
+  .content hr{
+    margin: 0 auto;
+    margin-bottom:25px;
+    margin-top:35px;
+    height: 4px;
+    width: 95px;
+    border-radius: 10px;
+    border: none;
+    background-color: #B72424;
+  
+  }
+  
+  .footer {
+    height: 63px;
+    align-items: center;
+    display:flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+  }
+  .footer-icons {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .header, .footer {
+    position: fixed;
+    width: 100%;
+    padding-left:23px;
+    padding-right: 23px;
+  }
+  
+  .header{
+    top:0;
+  }
+  .footer{
+    bottom: 0;
+    padding-left:0px;
+    padding-bottom:6px;
+    padding-top:7px;
+  }
+  
+  #footerButton1{
+    font-size:13px;
+    color:#454B68;
+    font-weight:500;
+  }
+  
+  #footerButton2{
+    font-size:13px;
+    color:#454B68;
+    font-weight:500;
+  }
+  
+  #footerButton3{
+    font-size:13px;
+    color:#B72424;
+    font-weight:500;
+  }
+  #searchInput1{
+    display:none;
+    width: 100%;
+    height: 44px;
+    background-color: #FFFFFF;
+    border:none;
+  }
+  .search-input {
+    background-image: url("/IMG/VectorSearch.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px; /* Учитываем ширину иконки */
+    padding-right:30px;
+    background-size: 17.76px;
+    font-size: 17px;
+    color: #CDCDCD;
+    border-radius: 8px;
+  }
+  
+  #searchInput2{
+    display:none;
+  }
+  
+  .search-form{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 0px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  
+  .search-form_txt{
+    font-size:17px;
+    color:#CDCDCD;
+  }
+  
+  .search-form button{
+    border: none;
+  }
+  .search-form_txt:hover{
+    border: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  .content-bottom-side2{
+    width: 100% auto;
+    height: 100% auto;
+    padding-bottom: 10px;
+    background-color: rgb(248,248,248);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left:13px;
+    padding-right: 10px;
+  }
+  .content-bottom-size-title2{
+    font-size:22px;
+    font-weight: bold;
+    color:black;
+  }
+  .content-bottom-size-text2{
+    font-size:13px;
+    color:#454B68;
+    width: 100% auto;
+    height: 60px;
+  }
+  
+  
+  .content-bottom-side2-title{
+    display: flex;
+    justify-content: space-between;
+    padding-top:9px;
+    margin-bottom:10px;
+  
+  }
+  
+  .stars img{
+    padding-top:5px;
+  }
+  
+  .profileavatar{
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+  }
+  
+  .profileavatar img{
+    width: 126px;
+    height: 129px;
+    size: 20px;
+    border-radius: 50%;
+    border: none;
+    box-sizing: border-box;
+  }
+  .profile-info{
+    width: 100% auto;
+    height: 100% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right:30px;
+  }
+  .UserName{
+    font-size:25px;
+    font-weight: bold;
+    color:#454B68;
+  }
+  
+  .profileId{
+    font-size: 20px;
+    font-weight: bold;
+    color:#454B68;
+  }
+  
+  .UserMail{
+    font-size: 20px;
+    font-weight: bold;
+    color:#454B68;
+  }
+  
+  
+  
+  .history{
+    width: 100%;
+    height: 66px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-top: 35px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+  }
+  .review{
+    width: 100%;
+    height: 66px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-top: 35px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+  }
+  
+  .settings{
+    width: 100%;
+    height: 66px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-top: 35px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+  }
+  .camera{
+    position: absolute;
+  }
+  .back{
+    margin-top: 25px;
+    width: 86px;
+    height: 29px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin-bottom:25px;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: regular;
+  }
+.back img{
+    width: 13px;
+    height: 22.67px;
+}
+  .header{
+    margin-top: auto;
+    display: block;
+    padding-top:0px;
+  }
+  .content{
+    margin-top:60px;
+  }
+
+  .headerright{
+    display: flex;
+    justify-content: space-between;
+  }
+#headerlefttext p{
+    font-size:22px;
+    font-weight:500;
+}
+.swapbutton{
+    width: 70px;
+    height: 33px;
+    border: 1px solid #454B68;
+    margin-left: 11px;
+    border-radius: 16.5px;
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    box-sizing: border-box;
+}
+.settingsbuttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 39px;
+}
+.settingsbuttons1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.settingsbuttons2{
+    display: flex;
+    justify-content: space-between;
+}
+.swapbuttonblock{
+    width: auto;
+}
+.swapbutton1{
+    width: 53px;
+    height: 44px;
+    align-items: center;
+    display: flex;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 14px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    background-color: #B72424;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.swapbuttonblock1{
+    margin-left: 11px;
+    width: 70px;
+    height: 33px;
+    display: flex;
+    justify-content: left;
+}

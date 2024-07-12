@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="MyReviewsStyle.css">
+</head>
+<body>
+    <div class="main">
+        <div class="main-container">
+        <div class="header">
+            <a href="Profile.html" class="back">
+                <img src="IMG/arrow.svg" alt="">
+                <p style="font-size: 20px;">Назад</p>
+            </a>
+            <div id="headerlefttext">
+                <p>История посещений</p>
+                <hr>
+            </div>
+
+
+        </div>
+        <div class="content-container">
+        <div class="content">
+
+
+
+                <div id="content-blocks"  class="content-blocks">
+
+                    <div id="contentopencard" class="content-bottom-side2">
+                        <div class="content-bottom-side2-title">
+                    <p class="content-bottom-size-title2">Пилатес</p>
+                    <div class="stars">
+                        <p>3,5/5</p>
+                        <img src="/IMG/star.svg" alt="">
+
+                    </div>
+                </div>
+                <div class="content-bottom-background">
+                    <div class="height: 60px;">
+                    <p class="content-bottom-size-text2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, consequuntur! Vitae maxime pariatur ipsa eaque provident ab, officiis possimus.</p>
+                </div>
+                    <div style="display: flex; justify-content: right; color:#B72424; font-size:15px; font-weight: bold;">
+
+                </div>
+                </div>
+            </div>
+    
+        </div>
+        <div id="content-blocks"  class="content-blocks">
+
+
+            <div id="contentopencard" class="content-bottom-side2">
+                <div class="content-bottom-side2-title">
+            <p class="content-bottom-size-title2">Пилатес</p>
+            <div class="stars">
+                <p>3,5/5</p>
+                <img src="/IMG/star.svg" alt="">
+ 
+            </div>
+        </div>
+        <div class="content-bottom-background">
+            <div class="height: 60px;">
+            <p class="content-bottom-size-text2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, consequuntur! Vitae maxime pariatur ipsa eaque provident ab, officiis possimus.</p>
+        </div>
+            <div style="display: flex; justify-content: right; color:#B72424; font-size:15px; font-weight: bold;">
+
+        </div>
+        </div>
+    </div>
+
+</div>
+<div id="content-blocks"  class="content-blocks">
+
+
+    <div id="contentopencard" class="content-bottom-side2">
+        <div class="content-bottom-side2-title">
+    <p class="content-bottom-size-title2">Пилатес</p>
+    <div class="stars">
+        <p>3,5/5</p>
+        <img src="/IMG/star.svg" alt="">
+
+    </div>
+</div>
+<div class="content-bottom-background">
+    <div class="height: 60px;">
+    <p class="content-bottom-size-text2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, consequuntur! Vitae maxime pariatur ipsa eaque provident ab, officiis possimus.</p>
+</div>
+    <div style="display: flex; justify-content: right; color:#B72424; font-size:15px; font-weight: bold;">
+
+</div>
+</div>
+</div>
+
+</div>
+<div id="content-blocks"  class="content-blocks">
+
+
+    <div id="contentopencard" class="content-bottom-side2">
+        <div class="content-bottom-side2-title">
+    <p class="content-bottom-size-title2">Пилатес</p>
+    <div class="stars">
+        <p>3,5/5</p>
+        <img src="/IMG/star.svg" alt="">
+
+    </div>
+</div>
+<div class="content-bottom-background">
+    <div class="height: 60px;">
+    <p class="content-bottom-size-text2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, consequuntur! Vitae maxime pariatur ipsa eaque provident ab, officiis possimus.</p>
+</div>
+    <div style="display: flex; justify-content: right; color:#B72424; font-size:15px; font-weight: bold;">
+
+</div>
+</div>
+</div>
+
+</div>
+
+            
+
+    <div id="filter"class="filter">
+        <div class="filter-title">
+        <p>Фильтр</p>
+        <hr class="filter-hr">
+
+    </div>
+    <div class="filter-buttons">
+        <button>Без мяча</button>
+        <button>Только с мячом</button>
+        <button>ЛФК</button>
+    </div>
+    </div>
+    
+
+    </div>
+</div>
+</div>
+<div class="footer">
+    <a href="/Registr.html">
+    <div class="footer-icons">
+        <img id="searchImage4" src="/IMG/account_balancenormal.svg" alt="" style="cursor: pointer;">
+        <p id="footerButton1">Главная</p>
+    </div>
+</a>
+    <div class="footer-icons">
+        <img id="searchImage5" src="/IMG/developer_board.svg" alt="" style="cursor: pointer;">
+        <p id="footerButton2">Расписание</p>
+    </div>
+    <a href="/Profile.html">
+    <div class="footer-icons">
+        <img id="searchImage6" src="IMG/redicon.svg" alt="" style="cursor: pointer;">
+        <p id="footerButton3">Профиль</p>
+    </div>
+</a>
+</div>
+
+
+
+    
+    <script>
+
+
+
+
+        document.getElementById('searchImage1').addEventListener('click', function() {
+    // Затемняем контент при открытии поискового окна
+    document.getElementById('overlay').style.display = 'block';
+    // Остальной ваш код...
+        });
+
+        document.getElementById('searchImage1').addEventListener('click', function(event) {
+    event.stopPropagation(); // Остановка всплытия события, чтобы не вызывать обработчик document.click
+    var headerDivs = document.querySelectorAll('.header > div');
+    headerDivs.forEach(function(div) {
+        filter.style.display = 'block';
+    });
+});
+
+document.addEventListener('click', function(event) {
+    // Проверяем, было ли нажатие вне блока .filter или его дочерних элементов
+    if (!filter.contains(event.target) && event.target.id !== 'searchImage1') {
+        // Если нажатие было вне блока .filter и не на searchImage1, скрываем его
+        filter.style.display = 'none';
+    }
+});
+        
+
+        document.getElementById('searchImage2').addEventListener('click', function() {
+            // Скрываем все дивы в header
+            var headerDivs = document.querySelectorAll('.header > div');
+            headerDivs.forEach(function(div) {
+                headerlefttext.style.display = 'none';
+                headerlefttext.style.display = 'none';
+                searchImage1.style.display = 'none';
+                searchImage2.style.display = 'none';
+
+
+            });
+
+            // Растягиваем окно поиска на весь размер header
+            var searchInput = document.getElementById('seacrh');
+            seacrh.style.display = 'block';
+            seacrh.style.display = 'flex';
+            seacrh.style.width = '100%';
+            searchInput1.style.display = 'block';
+            searchInput1.style.width = '100%';
+            headernavigation.style.width = '100%';
+            searchInput2.style.display = 'block';
+            
+
+            
+
+        });
+
+
+
+
+        var isContentExpanded = false; // Флаг для отслеживания состояния раскрытия контента
+
+document.getElementById('content-blocks').addEventListener('click', function() {
+    // Получаем текущую высоту content-img2
+    var currentHeightImg2 = document.getElementById('content-img2').clientHeight;
+    
+    // Получаем текущую высоту content-bottom-size-text2
+    var contentBottomSizeText2 = document.querySelector('.content-bottom-side2 .content-bottom-size-text2');
+    var currentHeightBottomSizeText2 = contentBottomSizeText2.clientHeight;
+
+    // Проверяем текущее состояние раскрытия контента
+    if (!isContentExpanded) {
+        // Если контент не раскрыт, увеличиваем высоту content-img2 и content-bottom-size-text2
+        document.getElementById('content-img2').style.height = '283px'; // Изменяем высоту content-img2
+        contentBottomSizeText2.style.height = 'auto'; // Изменяем высоту content-bottom-size-text2
+        isContentExpanded = true; // Устанавливаем флаг состояния раскрытия контента в true
+    } else {
+        // Если контент уже раскрыт, возвращаем высоту content-img2 и content-bottom-size-text2 обратно
+        document.getElementById('content-img2').style.height = '117px'; // Возвращаем высоту content-img2
+        contentBottomSizeText2.style.height = '72px'; // Возвращаем высоту content-bottom-size-text2
+        isContentExpanded = false; // Устанавливаем флаг состояния раскрытия контента в false
+    }
+});
+
+
+
+        
+        
+        
+
+
+    </script>
+</body>
+</html>

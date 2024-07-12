@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border-radius: 10px;
+}
+body{
+    width: 100% ;
+    height: 100%;
+}
+.main{
+    width: 100% auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.main-container{
+    width: 100%;
+    height: 100% auto;
+}
+.header{
+    background-color: #FFFFFF;
+    padding-top:25px;
+    padding-bottom:20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.header p{
+    font-size:22px;
+    font-weight:500;
+}
+.header hr{
+    height: 4px;
+    width: 74px;
+    margin-top:10px;
+    background-color: #B72424;
+    border: none;
+    border-radius: 10px;
+}
+#headernavigation{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    max-width: 100%;
+    overflow-y: auto; /* Включаем вертикальную прокрутку */
+    -webkit-overflow-scrolling: touch; /* Добавляем плавную прокрутку на мобильных устройствах */
+    height: 100%; /* Определяем высоту контента, которая учитывает высоту header и footer */
+    margin-top:34px;    
+    margin-top: 120px;
+}
+
+.content-container{
+    width: 100%;
+    height: 100%;
+}
+
+.content-blocks {
+    /* Ваш текущий CSS */
+    width: 100%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.content-blocks-main-info{
+    width: 100%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    margin-bottom:25px;
+    border-radius: 10px;
+}
+.content-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 117px;
+    border-top-left-radius: 8px;    
+    border-top-right-radius: 10px;
+
+}
+
+.content-img2{
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 117px;
+    border-top-left-radius: 8px;    
+    border-top-right-radius: 10px;
+    background-position:center;
+}
+.img2{
+    background-image: url(IMG/women.svg);
+}
+
+.img1{
+    background-image: url(IMG/EminemRevival1.svg);
+}
+
+.content-bottom-side{
+    width: 100% auto;
+    height: 100% auto;
+    background-color: white;
+    box-shadow: 0px 14px 40px rgba(0, 0, 0, 0.08);
+
+    padding-top:10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 10px; /* Добавляем отступ сверху */
+    padding-bottom: 10px; /* Добавляем отступ снизу */
+    padding-left:13px;
+    padding-right: 10px;    
+}
+.content-bottom-size-title{
+    font-size:22px;
+    font-weight: bold;
+    color:#41B724;
+    margin-bottom:10px;
+}
+.content-bottom-size-text{
+    font-weight: regular;
+    font-size:13px;
+    color:#454B68;
+    width: 100%;
+    max-height: 100%; /* Максимальная высота, после которой текст будет обрезаться */
+    overflow-y: hidden; /* Скрыть вертикальную прокрутку */
+    white-space: normal; /* Позволить тексту переноситься на новую строку */
+    text-overflow: ellipsis; /* Обрезать текст с троеточием */
+}
+.content-hr{
+    margin: 0 auto;
+    margin-bottom:25px;
+    margin-top:25px;
+    height: 4px;
+    width: 95px;
+    border-radius: 10px;
+    border: none;
+    background-color: #B72424;
+
+}
+
+.footer {
+    height: 63px;
+    align-items: center;
+    display:flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.1);
+}
+.footer-icons {
+    align-items: center;
+    text-align: center;
+}
+
+.header, .footer {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding-left:23px;
+    padding-right: 23px;
+}
+
+.header{
+    top:0;
+}
+.footer{
+    bottom: 0;
+    padding-left:0px;
+    padding-bottom:6px;
+    padding-top:7px;
+}
+
+#footerButton1{
+    font-size:13px;
+    color:#B72424;
+    font-weight:500;
+}
+
+#footerButton2{
+    font-size:13px;
+    color:#454B68;
+    font-weight:500;
+}
+
+#footerButton3{
+    font-size:13px;
+    color:#454B68;
+    font-weight:500;
+}
+#searchInput1{
+    display:none;
+    width: 100%;
+    height: 44px;
+    background-color: #FFFFFF;
+    border:none;
+}
+.search-input {
+    background-image: url("/IMG/VectorSearch.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px; /* Учитываем ширину иконки */
+    padding-right:30px;
+    background-size: 17.76px;
+    font-size: 17px;
+    color: #CDCDCD;
+    border-radius: 8px;
+}
+
+#searchInput2{
+    display:none;
+}
+
+.search-form{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 0px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.search-form_txt{
+    font-size:17px;
+    color:#CDCDCD;
+}
+
+.search-form button{
+    border: none;
+}
+.search-form_txt:hover{
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+
+.content-bottom-side2{
+    /* Ваш текущий CSS */
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0px 14px 40px rgba(0, 0, 0, 0.08);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 13px;
+    padding-right: 10px;
+    /* Новые стили */
+    overflow: hidden; /* Скрываем текст, который не помещается в блок */
+}
+.content-bottom-size-title2{
+    font-size:22px;
+    font-weight: bold;
+    color:#454B68;
+}
+.content-bottom-size-text2{
+    font-size:13px;
+    color:#454B68;
+    width: 100% auto;
+    height: 100% auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    white-space:normal;
+    text-overflow: ellipsis;
+}
+
+
+
+.content-bottom-side2-title{
+    display: flex;
+    justify-content: space-between;
+    padding-top:9px;
+    margin-bottom:10px;
+
+}
+
+.stars img{
+    padding-top:5px;
+}
+
+
+
+.filter{
+    display: none;
+    width: 100%;
+    border: none;
+    position: fixed;
+    background-color: #FFFFFF;
+    bottom:0;  
+    background-color: rgb(248,248,248);
+}
+
+.filter p{
+    margin-top:34px;
+    font-size:22px;
+    font-weight: bold;
+    color:#454B68;
+}
+
+.filter-hr{
+    background-color: #B72424;
+    border: none;
+    width: 38px;
+    height: 4px;
+    margin-top: 6px;
+    border-radius: 15px;
+}
+
+.filter-title{
+    width: 78px;
+    height: auto;
+    margin-left:25px;
+}
+.filter-buttons{
+    width: 100% auto;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom:35px ;
+    
+
+}
+.filter-buttons button{
+    border: none;
+    color: #B72424;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 100%;
+    height: 44px;
+    margin-top: 20px;
+    font-size: 22px;
+    box-shadow: 0px 14px 40px rgba(0, 0, 0, 0.08);
+    background-color: rgb(248,248,248);
+}
+
+
+.filter-buttons button:hover {
+    background-color:#B72424 ;
+    color:#FFFFFF;
+}
+
+
+
+
+.content-bottom-side2 .content-bottom-size-text2 {
+    /* Новые стили */
+    height: 72px; /* Ограничиваем максимальную ширину текста */
+     /* Запрещаем перенос текста на новую строку */
+    overflow: hidden; /* Скрываем текст, который не помещается в блок */
+    text-overflow: ellipsis; /* Добавляем многоточие для обозначения обрезанного текста */
+}
+

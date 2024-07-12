@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WHY404 Team Library</title>
+  <link rel="stylesheet" href="EnterCodeNumberStyle.css">
+</head>
+<body>
+    <div class="main-reg">
+        <a href="ForgotNumber.html" class="back">
+            <img src="IMG/arrow.svg" alt="">
+            <p style="font-size: 20px;">Назад</p>
+        </a>
+      <div class="main-reg-1block">
+      <div class="main-reg-text1">
+        <p class="main-reg-p1">Введите код с телефона</p>
+        <hr>
+
+    </div>
+    </div>
+    <div class="main-registration">
+      <form class="form1" action="process.php" method="post">
+        <input type="text" id="login" placeholder="Код"class="form-text">
+      </form>
+      
+    </div>
+
+      <button id="RegButton"  type="submit">Войти</button>
+
+  </div>
+
+
+  <script>
+    // Получаем кнопку по идентификатору
+    var button = document.getElementById('RegButton');
+    
+    // Назначаем обработчик события клика на кнопку
+    button.addEventListener('click', function() {
+        // При клике перенаправляем пользователя на другую страницу
+        window.location.href = 'Registr.html'; // Замените 'новая_страница.html' на путь к вашему файлу
+    });
+</script>
+
+</body>
+</html>

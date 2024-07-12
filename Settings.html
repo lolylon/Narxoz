@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="SettingStyle.css">
+</head>
+<body>
+    <div class="main">
+        <div class="main-container">
+
+        <div class="header">
+            <a href="Profile.html" class="back">
+                <img src="IMG/arrow.svg" alt="">
+                <p style="font-size: 20px;">Назад</p>
+            </a>
+            <div class="headerright">
+            <div id="headerlefttext">
+                <p>Настройки</p>
+                <hr>
+            </div>
+
+        </div>
+        <div class="settingsbuttons">
+            <div>
+                <p style="font-size: 25px; font-weight:600; color: #454B68; ">Уведомления</p>
+                <p style="font-size: 13px; margin-top:11px;">Здесь вы можете включить уведомления о надвигающихся занятиях</p>
+            </div>
+            <div class="swapbuttonblock">
+            <div class="swapbutton">
+                <img style="background-color: #CDCDCD; border-radius: 50%; padding: 4px;" src="IMG/icons/Vector.svg" alt="">
+            </div>
+        </div>
+        </div>
+        <div class="settingsbuttons1">
+            <div>
+                <p style="font-size: 25px; font-weight:600; color: #454B68; margin-top: 25px; margin-bottom: 50px;">Темная тема</p>
+            
+            </div>
+            <div class="swapbuttonblock">
+                <div class="swapbutton">
+                    <img style="background-color: #DFB211; border-radius: 50%; padding: 4px;" src="IMG/icons/Vector (1).svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="settingsbuttons2">
+            <div>
+                <p style="font-size: 25px; font-weight:600; color: #454B68;">Статус ЛФК</p>
+                <p style="font-size: 13px; margin-top:11px;">Загрузите справку ВКК чтобы получить статус ЛФК</p>
+            </div>
+            <div class="swapbuttonblock1">
+                <div class="swapbutton1">
+                    <img style="background-color: #B72424;" src="IMG/icons/Vector (2).svg" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="content-container">
+        <div class="content">
+        <div class="footer">
+            <a href="/Registr.html">
+            <div class="footer-icons">
+                <img id="searchImage4" src="/IMG/MainGreyIcon.svg" alt="" style="cursor: pointer;">
+                <p id="footerButton1">Главная</p>
+            </div>
+        </a>
+            <div class="footer-icons">
+                <img id="searchImage5" src="/IMG/developer_board.svg" alt="" style="cursor: pointer;">
+                <p id="footerButton2">Расписание</p>
+            </div>
+            <a href="/Profile.html">
+            <div class="footer-icons">
+                <img id="searchImage6" src="/IMG/ProfileRedIcon.svg" alt="" style="cursor: pointer;">
+                <p id="footerButton3">Профиль</p>
+            </div>
+        </a>
+    </div>
+</div>
+</div>
+
+
+
+    
+    <script>
+        document.getElementById('searchImage1').addEventListener('click', function() {
+    // Затемняем контент при открытии поискового окна
+    document.getElementById('overlay').style.display = 'block';
+    // Остальной ваш код...
+        });
+
+        document.getElementById('searchImage2').addEventListener('click', function() {
+            // Скрываем все дивы в header
+            var headerDivs = document.querySelectorAll('.header > div');
+            headerDivs.forEach(function(div) {
+                headerlefttext.style.display = 'none';
+                headerlefttext.style.display = 'none';
+                searchImage1.style.display = 'none';
+                searchImage2.style.display = 'none';
+
+
+            });
+
+            // Растягиваем окно поиска на весь размер header
+            var searchInput = document.getElementById('seacrh');
+            seacrh.style.display = 'block';
+            seacrh.style.display = 'flex';
+            seacrh.style.width = '100%';
+            searchInput1.style.display = 'block';
+            searchInput1.style.width = '100%';
+            headernavigation.style.width = '100%';
+            searchInput2.style.display = 'block';
+            
+
+        });
+        
+
+
+    </script>
+</body>
+</html>

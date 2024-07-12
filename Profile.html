@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/ProfileStyle.css">
+</head>
+<body>
+    <div class="main">
+        <div class="main-container">
+        <div class="header">
+            
+            <div id="headerlefttext">
+                <p>Профиль</p>
+                <hr>
+            </div>
+            <div id="headernavigation">
+               <!-- <form class="seacrh-form" method="get" action="/seacrh" id="seacrh">
+                    <input name="q" type="text" size="40" placeholder="Поиск...">
+                </form> -->
+                <div id="seacrh" class="search-form">
+                    <button id="searchInput2"class="seacrh-form_btn"><img class="seacrh-form_image"src="/IMG/VectorSearch.svg" alt="Image"></button>
+                    <input id="searchInput1" class="search-form_txt"type="text" placeholder="Поиск...">
+                    
+                </div>
+                <a href="Main.html" style="align-items: center; display: flex; justify-content: center;">
+                <img src="IMG/profile/Group.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="content-container">
+        <div class="content">
+            <div class="profile-info">
+                <div class="profilephoto">
+                    <img class="profileavatar" src="/IMG/Ellipse 4.svg" alt="">
+                    <img class="camera" src="IMG/profile/camera_alt.svg" alt="">
+                </div>
+                <p style="color:#248BB7; font-size: 20px; font-weight:500; margin-bottom:13px; margin-top: 8px;">ЛФК</p>
+                <p id="USERFIO" class="UserName">Золо Иван Сергеевич</p>
+                <p id ="ProfileId" class="profileId">34543</p>
+                <p id="UserMail" class="UserMail">Zolo.Ivan@narxoz.kz</p>
+                <a href="Visit.html" class="history">
+                    <p>История посещений</p>
+                    <img src="IMG/profile/Vector1.svg" alt="">
+                </a>
+                <a href="MyReviews.html" class="review">
+                    <p>Мои отзывы</p>
+                    <img src="IMG/profile/Vector2.svg" alt="">
+                </a>
+
+                <a href="Settings.html" class="settings">
+                    <p>Настройки</p>
+                    <img src="IMG/profile/Vector3.svg" alt="">
+                </a>
+
+            </div>
+        <div class="footer">
+            <a href="/Registr.html">
+            <div class="footer-icons">
+                <img id="searchImage4" src="/IMG/MainGreyIcon.svg" alt="" style="cursor: pointer;">
+                <p id="footerButton1">Главная</p>
+            </div>
+        </a>
+            <a href="Schedule.html" class="footer-icons">
+                <img id="searchImage5" src="/IMG/developer_board.svg" alt="" style="cursor: pointer;">
+                <p id="footerButton2">Расписание</p>
+            </a>
+            <a href="/Profile.html">
+            <div class="footer-icons">
+                <img id="searchImage6" src="/IMG/ProfileRedIcon.svg" alt="" style="cursor: pointer;">
+                <p id="footerButton3">Профиль</p>
+            </div>
+        </a>
+    </div>
+</div>
+</div>
+
+
+
+    
+    <script>
+        document.getElementById('searchImage1').addEventListener('click', function() {
+    // Затемняем контент при открытии поискового окна
+    document.getElementById('overlay').style.display = 'block';
+    // Остальной ваш код...
+        });
+
+        document.getElementById('searchImage2').addEventListener('click', function() {
+            // Скрываем все дивы в header
+            var headerDivs = document.querySelectorAll('.header > div');
+            headerDivs.forEach(function(div) {
+                headerlefttext.style.display = 'none';
+                headerlefttext.style.display = 'none';
+                searchImage1.style.display = 'none';
+                searchImage2.style.display = 'none';
+
+
+            });
+
+            // Растягиваем окно поиска на весь размер header
+            var searchInput = document.getElementById('seacrh');
+            seacrh.style.display = 'block';
+            seacrh.style.display = 'flex';
+            seacrh.style.width = '100%';
+            searchInput1.style.display = 'block';
+            searchInput1.style.width = '100%';
+            headernavigation.style.width = '100%';
+            searchInput2.style.display = 'block';
+            
+
+        });
+        
+
+
+    </script>
+</body>
+</html>

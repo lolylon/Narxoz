@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/TrainerProfileStyle.css">
+</head>
+<body>
+    <div class="main">
+        <div class="main-container">
+        <div class="header">
+            
+            <div id="headerlefttext">
+                <p>Профиль тренера</p>
+            </div>
+        </div>
+        <div class="content-container">
+        <div class="content">
+            <div class="profile-info">
+                <div class="profileavatar">
+                    <img class="profileavatar" src="/IMG/1200x1432_0xac120003_19251463531646389694 1.svg" alt="">
+                </div>
+                <div class="stars">
+                    <img src="/IMG/star.svg" alt="">
+                    <img src="/IMG/star.svg" alt="">
+                    <img src="/IMG/star.svg" alt="">
+                    <img src="/IMG/star.svg" alt="">
+                    <img src="/IMG/star.svg" alt="">
+                </div>
+                <p id="USERFIO" class="UserName">Кузнецов Билли Херингтон</p>
+                <p id ="ProfileId" class="profileId">346346</p>
+                <p id="UserMail" class="UserMail">kuznecov.billy@narxoz.kz</p>
+            </div>
+            <div class="profile-info2">
+            <p style="font-size: 25px; font-weight: bold; line-height: 22px;">Опыт</p>
+            <p>16 лет</p>
+            <hr class="content-hr1">
+            <div class="achievements">
+                <p>Достижения</p>
+                <ol>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+            </ol>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="/Registr.html">
+            <div class="footer-icons">
+                <img id="searchImage4" src="/IMG/MainGreyIcon.svg" alt="" style="cursor: pointer;">
+                <p id="footerButton1">Главная</p>
+            </div>
+        </a>
+            <div class="footer-icons">
+                <img id="searchImage5" src="/IMG/developer_board.svg" alt="" style="cursor: pointer;">
+                <p id="footerButton2">Расписание</p>
+            </div>
+            <a href="/Profile.html">
+            <div class="footer-icons">
+                <img id="searchImage6" src="/IMG/ProfileRedIcon.svg" alt="" style="cursor: pointer;">
+                <p id="footerButton3">Профиль</p>
+            </div>
+        </a>
+    </div>
+</div>
+</div>
+
+
+
+    
+    <script>
+        document.getElementById('searchImage1').addEventListener('click', function() {
+    // Затемняем контент при открытии поискового окна
+    document.getElementById('overlay').style.display = 'block';
+    // Остальной ваш код...
+        });
+
+        document.getElementById('searchImage2').addEventListener('click', function() {
+            // Скрываем все дивы в header
+            var headerDivs = document.querySelectorAll('.header > div');
+            headerDivs.forEach(function(div) {
+                headerlefttext.style.display = 'none';
+                headerlefttext.style.display = 'none';
+                searchImage1.style.display = 'none';
+                searchImage2.style.display = 'none';
+
+
+            });
+
+            // Растягиваем окно поиска на весь размер header
+            var searchInput = document.getElementById('seacrh');
+            seacrh.style.display = 'block';
+            seacrh.style.display = 'flex';
+            seacrh.style.width = '100%';
+            searchInput1.style.display = 'block';
+            searchInput1.style.width = '100%';
+            headernavigation.style.width = '100%';
+            searchInput2.style.display = 'block';
+            
+
+        });
+        
+
+
+    </script>
+</body>
+</html>
